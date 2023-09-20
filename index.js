@@ -1,5 +1,9 @@
 let bigGreenTree = document.createElement('img')
 let regularTree = document.createElement('img')
+let pillar = document.createElement('img')
+let box = document.createElement('img')
+let crate = document.createElement('img')
+let well = document.createElement('img')
 
 // PINE TREE 
 function newImage(bigGreenTree) {
@@ -35,14 +39,40 @@ newTree(regularTree)
 // REGULAR TREE
 
 // Pillar
-function imageThree(regularTree) {
-    regularTree.src = 'assets/pillar.png'
-    regularTree.style.position = 'fixed'
-    regularTree.style.left = '350px'
-    regularTree.style.bottom = '100px'
-    document.body.append(regularTree)
+function imageThree(pillar) {
+    pillar.src = 'assets/pillar.png'
+    pillar.style.position = 'fixed'
+    pillar.style.left = '350px'
+    pillar.style.bottom = '100px'
+    document.body.append(pillar)
 } 
 
-imageThree(regularTree)
+imageThree(pillar)
 // Pillar
+
+// crate
+function imageFour(crate) {
+    crate.src = 'assets/crate.png'
+    crate.style.position = 'fixed'
+    crate.style.left = '150px'
+    crate.style.bottom = '200px'
+    document.body.append(crate)
+} 
+
+imageFour(crate)
+// crate
+
+// WELL
+function imageFive(well) {
+    well.src = 'assets/well.png'
+    well.style.position = 'fixed'
+    well.style.left = '500px'
+    well.style.bottom = '425px'
+    document.body.append(well)
+} 
+
+imageFive(well)
+// WELL
+
+
 
