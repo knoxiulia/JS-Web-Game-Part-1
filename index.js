@@ -74,5 +74,22 @@ function imageFive(well) {
 imageFive(well)
 // WELL
 
+// SWORD
+function newItem (imageURL, left, bottom) {
+    let sword= document.createElement ('img')
+    sword.src= imageURL
+    sword.style.position= 'fixed'
+    sword.style.left= left+'px'
+    sword.style.bottom= bottom+'px'
+    document.body.append(sword)
+
+    sword.addEventListener('click'), function (sword) {
+        sword.remove(sword)
+    }
+}
+newItem('assets/sword.png', 500, 405)
+newItem('assets/shield.png', 165, 185)
+newItem('assets/staff.png', 600, 100)
+// SWORD
 
 
