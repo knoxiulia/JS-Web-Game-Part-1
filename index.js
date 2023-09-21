@@ -75,17 +75,17 @@ imageFive(well)
 // WELL
 
 // SWORD
-function newItem (imageURL, left, bottom) {
-    let sword= document.createElement ('img')
-    sword.src= imageURL
-    sword.style.position= 'fixed'
-    sword.style.left= left+'px'
-    sword.style.bottom= bottom+'px'
-    document.body.append(sword)
 
-    sword.addEventListener('click'), function (sword) {
-        sword.remove(sword)
-    }
+function newItem (imageURL, left, bottom) {
+    let misc = document.createElement ('img')
+    misc.src = imageURL
+    misc.style.position = 'fixed'
+    misc.style.left = left+'px'
+    misc.style.bottom = bottom+'px'
+    document.body.append(misc)
+    misc.addEventListener('dblclick', function() {
+        misc.remove()
+    })
 }
 newItem('assets/sword.png', 500, 405)
 newItem('assets/shield.png', 165, 185)
